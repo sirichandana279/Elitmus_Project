@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Game</title>
+<link rel="icon" type="image/ico" href="{{url_for('static', filename = 'favicon.ico') }}">
+  <style>
+	body {
+       background-image: url("https://media.istockphoto.com/id/1166593370/photo/wooden-cube-block-shape-with-sign-question-mark-symbol-on-wood-table.jpg?b=1&s=170667a&w=0&k=20&c=CXAbLkQfCeUesnWFImKUppkaxdwslFJygK1hkV_JQFE=");
+	   background-repeat: no-repeat;
+	   background-size: cover;
+	}
+  </style>
+</head>
+
+<body>
+	<center><h1 style="font-style: oblique;">SKILL HUNT</h1></center>
+	<form action="{{url_for('game')}}"  method="post">
+		<div class="row">
+				<div class="col-25">
+					<label for="user">Q1 : If ZIP = 30 and ZAP = 38, what will be VIP = ?</label><br>
+					<sub>(Hint : Respective position of letters from the end.)</sub>
+				</div>
+				<div class="col-75">
+					<input type="radio" id="Q1" name="wrong" value="0">
+					<label for="Q1">174</label><br>
+					<input type="radio" id="Q1" name="wrong" value="0">
+					<label for="Q1">43</label><br>
+					<input type="radio" id="Q1" name="answer1" value="1">
+					<label for="Q1">34</label><br>
+					<input type="radio" id="Q1" name="wrong" value="0">
+					<label for="Q1">113</label><br>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label for="user">Q2 : All of Jenny's pets are dogs except one. All of her pets are cats except one. How many cats and dogs does Jenny have?</label><br>
+			</div>
+			<div class="col-75">
+				<input type="radio" id="Q2" name="answer2" value="1">
+				<label for="Q2">Jenny has 1 dog and 1 cat</label><br>
+				<input type="radio" id="Q2" name="wrong" value="0">
+				<label for="Q2">jenny has 2 dogs and 1 cat</label><br>
+				<input type="radio" id="Q2" name="wrong" value="0">
+				<label for="Q2">Jenny has 1 dog and 2 cats</label><br>
+				<input type="radio" id="Q2" name="wrong" value="0">
+				<label for="Q2">Jenny has 2 dogs and 2 cats</label><br>
+			</div>
+	</div>
+	<div class="row">
+		<div class="col-25">
+			<label for="user">Q3 : In a certain code language,'526' means 'sky is blue'; '24' means 'blue colour' and '436' means 'color is fun'. Which digit in that language means 'fun'?</label><br>
+			<sub>(Hint : You need to identify the digit which appears only in the code 'color is fun' and not in others.)</sub>
+		</div>
+		<div class="col-75">
+			<input type="radio" id="Q3" name="wrong" value="0">
+			<label for="Q3">5</label><br>
+			<input type="radio" id="Q3" name="wrong" value="0">
+			<label for="Q3">4</label><br>
+			<input type="radio" id="Q3" name="answer3" value="1">
+			<label for="Q3">3</label><br>
+			<input type="radio" id="Q3" name="wrong" value="0">
+			<label for="Q3">2</label><br>
+		</div>
+</div>
+<div class="row">
+	<div class="col-25">
+		<label for="user">Q4 : Which of the following is an example of good communication skills?</label><br>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo2zecCk7k8LdOeIZI9uRepgOh9byQhq7kpW3Lc--NY5pRC2ZwUY91uVl63MBlnRuyX4Q&usqp=CAU" alt="">
+	</div>
+	<div class="col-75">
+		<input type="radio" id="Q4" name="wrong" value="0">
+		<label for="Q4">Avoiding eye contact</label><br>
+		<input type="radio" id="Q4" name="answer4" value="1">
+		<label for="Q4">Speaking clearly and concisely</label><br>
+		<input type="radio" id="Q4" name="wrong" value="0">
+		<label for="Q4">Interrupting someone when they are speaking</label><br>
+		<input type="radio" id="Q4" name="wrong" value="0">
+		<label for="Q4">Not collaborating</label><br>
+	</div>
+</div>
+		<div class="row">
+				<div class="col-25">
+					<label for="user">Q5 : How much dirt is in a round hole that is 9 feet deep with a diameter of 3 feet?</label><br>
+					<sub>(Hint : You don't have to do any math to get the answer.)</sub>
+				</div>
+				<div class="col-75">
+					<input type="radio" id="Q5" name="answer5" value="1">
+					<label for="Q5">Hole is empty</label><br>
+					<input type="radio" id="Q5" name="wrong" value="0">
+					<label for="Q5">The amount of dirt in the hole is 21kg</label><br>
+					<input type="radio" id="Q5" name="wrong" value="0">
+					<label for="Q5">The amount of dirt in the hole is 9kg</label><br>
+					<input type="radio" id="Q5" name="wrong" value="0">
+					<label for="Q5">None of the above</label><br>
+				</div>
+		</div>
+			<div class="row">
+			<input type="submit" name="submit" style="margin: 0 auto" value="Submit Answers">
+				</div>
+	</form>
+</body>
+</html>
